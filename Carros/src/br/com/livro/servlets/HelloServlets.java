@@ -25,7 +25,7 @@ public class HelloServlets extends HttpServlet{
 		
 		//Execute isto no navegador
 		//http://localhost:8080/Carros/hello?nome=Ewerton%20&sobrenome=Pontini
-	
+		//http://localhost:8080/Carros/hello?nome=Ewerton%20&sobrenome=Pontini
 	
 	
 	}
