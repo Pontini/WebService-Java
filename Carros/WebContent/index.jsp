@@ -6,7 +6,23 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Insert title here</title>
 
-Hello Hello
+<form method="post" action="<%=request.getContextPath()%>/hello">
+
+	Nome: <input type="text" name="nome">
+	</br>
+	</br>
+
+	Sobrenome: <input type="text" name="sobrenome">
+	</br>
+	</br>
+	</br>
+	
+	<input type="submit" name="Enviar">
+	
+
+</form>
+
+
 
 </head>
 <body>
