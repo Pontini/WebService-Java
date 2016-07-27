@@ -40,4 +40,20 @@ public class HelloServlets extends HttpServlet{
 		
 		
 	}
+	
+	
+	
+	@Override
+	protected void doPut(HttpServletRequest req, HttpServletResponse resp)throws ServletException, IOException{
+		
+		resp.getWriter().print("Olá Put");
+	}
+	
+	
+	@Override
+	protected void doDelete(HttpServletRequest req, HttpServletResponse resp)throws ServletException, IOException{
+		
+		resp.getWriter().print("Olá Delete");
+	}
+	
 }
