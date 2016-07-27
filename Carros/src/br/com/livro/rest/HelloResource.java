@@ -11,12 +11,29 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
 
+//@PATH - Configura a classe
+
+//@@Produces define o tipo de conteúdo que o método retorna
+
+//@Consumes Define o conteúdo que o método  consome. 
+
+//Desta forma, o JERSEY consegue automaticamente fazer as conversões necessárias com base na requisição.
+
+
+//AVISO: Vale ressaltar que as anotações @consumes e @PRODUCES podem ser definidas de forma global na classe ou
+// em cada método para customizar alguma configuração. Por exemplo, você pode colocar uma anotação no nível da
+//classe e dizer que todos os métodos consomem e retornam JSON. Caso necessário, você pode sobreescrever esta configuração em algum método;
+
+
+
+
 @Path("/hello")
 public class HelloResource {
 
 	
-	@GET
 	
+	
+	@GET
 	@Produces(MediaType.TEXT_HTML+";charset=utf8")
 	@Consumes(MediaType.TEXT_HTML)
 	public String helloHTML(){

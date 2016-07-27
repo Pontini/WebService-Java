@@ -45,12 +45,6 @@ public static Response ok(String string, String strings){
 	}
 	
 	
-	
-	
-	
-	
-	
-
 	public String getStatus() {
 		return status;
 	}
