@@ -30,5 +30,14 @@ public class HelloServlets extends HttpServlet{
 	
 	}
 	
-
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException{
+		
+		String nome = req.getParameter("nome");
+		String sobrenome = req.getParameter("sobrenome");
+		
+		resp.getWriter().print("Olá mundo Post "+nome+ " "+sobrenome);
+		
+		
+	}
 }
