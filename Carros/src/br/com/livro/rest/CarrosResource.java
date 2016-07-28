@@ -33,6 +33,8 @@ public class CarrosResource {
 		return carros;
 	}
 	
+	
+	// Configurado par aquando digitar qualquer valor, filtrar primeiramente no id. Veja o de baixo como está diferente
 	@GET
 	@Path("{id}")
 	public Carro get(@PathParam("id") long id){
